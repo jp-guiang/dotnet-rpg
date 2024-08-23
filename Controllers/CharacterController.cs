@@ -8,14 +8,15 @@ using Microsoft.Extensions.Logging;
 
 namespace dotnet_rpg.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class CharacterController : ControllerBase
     {
         
         private static Character knight = new Character();
 
-        public IActionResult Get()
+        [HttpGet]
+        public ActionResult<Character> Get()
         {
             return Ok(knight);
         }
