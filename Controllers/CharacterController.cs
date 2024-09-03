@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.VisualBasic;
 
 namespace dotnet_rpg.Controllers
 {
@@ -40,7 +41,14 @@ namespace dotnet_rpg.Controllers
         [HttpPut]
         public async Task<ActionResult<ServiceResponse<List<GetCharacterDto>>>> UpdateCharacter(UpdateCharacterDto updatedCharacter)
         {
-            return Ok(await _characterService.UpdateCharacter(updatedCharacter));
+            var response = await _characterService.UpdateCharacter(updatedCharacter);
+
+            if (response.Data is null)
+            {
+                return NotFound(response);
+            }
+
+            return Ok(response);
         }
 
     }
