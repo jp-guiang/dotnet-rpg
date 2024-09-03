@@ -37,3 +37,5 @@
 /Users/jp-guiang/Documents/study/c-sharp/dotnet-rpg/bin/Debug/net8.0/out/appsettings.json
 /Users/jp-guiang/Documents/study/c-sharp/dotnet-rpg/bin/Debug/net8.0/out/dotnet-rpg.deps.json
 /Users/jp-guiang/Documents/study/c-sharp/dotnet-rpg/bin/Debug/net8.0/out/dotnet-rpg.runtimeconfig.json
+/Users/jp-guiang/Documents/study/c-sharp/dotnet-rpg/bin/Debug/net8.0/AutoMapper.dll
+/Users/jp-guiang/Documents/study/c-sharp/dotnet-rpg/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
